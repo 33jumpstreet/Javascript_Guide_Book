@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mytrip</title>
+
+  <link rel="stylesheet" href="./libs/jquery-ui.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="./libs/jquery-3.6.0.min.js"></script>
+  <script src="./libs/js.cookie.js"></script>
+  <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=14012441404dbbbc1f3301face603389"></script>
+  <script src="./scripts/mytrip.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div id="header" class="inverted">
+      <div>
+        <a href="index.html"><span></span></a>
+        <div class="menu-items right">
+          <a href="mytrip.html">마이트립</a>
+          <img src="images/line_maintop_gray.png" />
+          <a href="register.html">회원가입</a>
+        </div>
+      </div>
+    </div>
+    <div id="body" class="detail">
+      <div class="mytrip-container">
+        <div id="map"></div>
+        <ui id="mytrip-list"></ui>
+      </div>
+    </div>
+  </div>
+
+  <li class="mytrip-item" id="mytrip-item-template">
+    <span class="item-icon"></span>
+    <span class="item-name"></span>
+    <span class="item-line"></span>
+    <span class="item-city-name"></span>
+    <span class="item-remove"></span>
+  </li>
+</body>
+</html>
